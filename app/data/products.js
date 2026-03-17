@@ -167,8 +167,8 @@ export const categoryDatabase = {
     },
     bestsellers: [
       { id: 203, title: 'Traditional Gold Plated Temple Necklace Set', price: 67.00, oldPrice: 98.00, img: '/jellwery/item3/item3_1.png' },
-      { id: 204, title: 'Elegant Gold Plated Designer Bracelet', price: 117.00, oldPrice: null, img: '/jellwery/item4/item4_2.png' },
-      { id: 205, title: 'Gold Plated Stone Design Bracelet for Women', price: 74.00, oldPrice: 92.00, img: '/jellwery/item5/item5_2.png' },
+      { id: 204, title: 'Elegant Gold Plated Designer Bracelet', price: 117.00, oldPrice: null, img: '/jellwery/item4/item4_2.jpg' },
+      { id: 205, title: 'Gold Plated Stone Design Bracelet for Women', price: 74.00, oldPrice: 92.00, img: '/jellwery/item5/item5_2.jpg' },
     ],
     promoImage: [{id:201,img:'/jellwery/item1/item1_3.png'}],
     products: [
