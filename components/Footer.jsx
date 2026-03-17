@@ -4,13 +4,13 @@ import "./home.css";
 
 export default function Footer() {
   const brands = [
-    { name: "Samsung", img: "/logos/Apple.png" },
-    { name: "ThinkPad", img: "/logos/Dell.png" },
-    { name: "vivo", img: "/logos/Hp.png" },
-    { name: "Huawei", img: "/logos/Think.png" },
-    { name: "SONY", img: "/logos/Moto.png" },
-    { name: "HiKOKI", img: "/logos/Asus.png" },
-    { name: "LG", img: "/logos/Samsung.png" },
+    { name: "Iphone", img: "/logos/Apple.png" },
+    { name: "Dell", img: "/logos/Dell.png" },
+    { name: "Hp", img: "/logos/Hp.png" },
+    { name: "Thinkpad", img: "/logos/Think.png" },
+    { name: "Moto", img: "/logos/Moto.png" },
+    { name: "Asus", img: "/logos/Asus.png" },
+    { name: "Samsung", img: "/logos/samsung.png" },
   ];
 
 
