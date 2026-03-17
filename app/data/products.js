@@ -14,7 +14,7 @@ export const categoryDatabase = {
       { id: 4, title: 'OnePlus 15R 5G Smartphone', price: 117.00, oldPrice: null, img: '/mobile/item4/Item4_2.png' },
       { id: 5, title: 'Motorola Edge 70 Fusion 5G Smartphone', price: 74.00, oldPrice: 92.00, img: '/mobile/item5/Item5_2.png' },
     ],
-    promoImage: [{id:3,img:'/mobile/item3/item3_4.png'}],
+    promoImage: [{id:3,img:'/mobile/item3/Item3_4.png'}],
     products: [
       {
         id: 1, title: 'Google Pixel 8 Pro 5G Smartphone', brand: 'Google', color: 'Metal', image: '/mobile/item1/Item1_1.png', thumbnails: ['/mobile/item1/Item1_2.png', '/mobile/item1/Item1_3.png', '/mobile/item1/Item1_4.png'], price: 99.22, oldPrice: 121.00, isSale: true, countdown: '293d : 09h : 42m : 48s', stock: 15, sold: 120, rating: 4,
