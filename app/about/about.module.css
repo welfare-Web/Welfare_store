@@ -1,0 +1,298 @@
+
+/* =========================================
+   1. TOP HEADER & TEXT SECTION
+========================================= */
+.ab {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.breadcrumbs {
+  font-size: 13px;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.breadcrumbs span:hover {
+  color: var(--primary-red);
+  cursor: pointer;
+}
+
+.ab1 h1 {
+  font-size: 42px;
+  font-weight: 300;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+  letter-spacing: -0.5px;
+}
+
+
+.txt {
+    text-align: center;
+    width: 90%;          /* Changed from 100rem */
+    max-width: 1200px;   /* Prevents it from getting too wide on 4K monitors */
+    margin: 0 auto;
+    color: var(--text-gray);
+}
+
+.txt1 {
+    margin-top: 3rem;
+}
+
+.con {
+    margin-top: 5rem;
+}
+
+/* =========================================
+   2. MAIN IMAGE
+========================================= */
+.img {
+    width: 90%;          /* Changed from 80rem */
+    max-width: 1200px;
+    height: auto;        /* Changed from 40rem so it scales proportionally */
+    aspect-ratio: 16/9;  /* Keeps it a nice wide rectangle */
+    object-fit: cover;
+    margin: 2rem auto 0 auto;
+    display: block;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.img:hover {
+    opacity: 0.7;
+}
+
+/* =========================================
+   3. STATS / INFO BOXES
+========================================= */
+.container {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* CRITICAL: Lets boxes stack on mobile */
+    gap: 40px;
+    margin-top: 2rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    background: #f5f3f37a;
+    padding: 40px;
+    flex: 1 1 250px; /* Allows the box to grow and shrink, min width 250px */
+    max-width: 400px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1.5px solid transparent; 
+    transition: border-color 0.3s ease;
+    color: var(--text-dark);
+}
+
+.box:hover {
+    border-color: black;
+}
+
+.box h1 {
+    font-size: clamp(28px, 4vw, 40px);
+    margin-bottom: 5px;
+}
+
+.box p {
+    font-size: 14px;
+    color: #333;
+}
+
+/* =========================================
+   4. TEAM SECTION
+========================================= */
+.teamSection {
+    background: #eeeeee;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.heading {
+    font-size: clamp(22px, 3vw, 28px);
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.card {
+    text-align: center;
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+/* Circle border wrapper made fluid */
+.imgWrapper {
+    width: 300px; /* Scaled down slightly from 380px for better fit */
+    height: 300px;
+    border-radius: 50%;
+    border: 1.5px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.5s ease;
+}
+
+.imgWrapper:hover {
+    border-color: black;
+}
+
+.imgWrapper img {
+    width: calc(100% - 30px); /* Automatically stays inside the wrapper */
+    height: calc(100% - 30px);
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 5%;
+    background: #ddd;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.card p {
+    color: gray;
+    font-size: 14px;
+}
+
+/* =========================================
+   5. VIDEO SECTION
+========================================= */
+.videoSection {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Changed from fixed 750px */
+    min-height: 400px;
+    max-height: 750px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bgImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.videoSection:hover .bgImage {
+    transform: scale(1.08);
+}
+
+.overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.25);
+    z-index: 2;
+}
+
+/* Play Button */
+.play_wrapper {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer; z-index: 3;
+}
+
+.play_btn {
+    position: relative;
+    width: 90px; height: 90px;
+    border-radius: 50%; border: 2px solid white;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0,0,0,0.35); color: white;
+    font-size: 28px; transition: 0.3s ease; z-index: 10;
+}
+
+.videoSection:hover .play_btn {
+    transform: scale(1.15);
+    background: white; color: black;
+}
+
+/* Pulse Animation */
+.pulse {
+    position: absolute; width: 120px; height: 120px;
+    border-radius: 50%; background: rgba(255,255,255,0.25);
+    top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0;
+}
+
+.videoSection:hover .pulse { animation: pulse 2s infinite; }
+.pulse1 { animation-delay: 0s; }
+.pulse2 { animation-delay: 0.6s; }
+.pulse3 { animation-delay: 1.2s; }
+
+@keyframes pulse {
+    0% { transform: translate(-50%, -50%) scale(0.6); opacity: 1; }
+    100% { transform: translate(-50%, -50%) scale(1.8); opacity: 0; }
+}
+
+/* =========================================
+   6. VIDEO MODAL POPUP
+========================================= */
+.video_modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85); display: flex;
+    justify-content: center; align-items: center; z-index: 9999;
+    padding: 20px;
+}
+
+.video_box {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Fluid width capping at 900px */
+}
+
+.video_box video {
+    width: 100%;
+    height: auto; /* Fixed height removed so video scales correctly */
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.close {
+    position: absolute;
+    top: -40px; right: 0; color: white;
+    font-size: 30px; cursor: pointer; transition: color 0.2s ease;
+}
+.close:hover { color: #ff2d2d; }
+
+/* =========================================
+   7. RESPONSIVE MEDIA QUERIES
+========================================= */
+@media (max-width: 768px) {
+    /* Shrink the team circles on tablets/mobile */
+    .imgWrapper {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Shrink play button on mobile */
+    .play_btn {
+        width: 70px;
+        height: 70px;
+        font-size: 22px;
+    }
+    
+    .pulse {
+        width: 90px;
+        height: 90px;
+    }
+
+    .container {
+        gap: 30px;
+    }
+}
