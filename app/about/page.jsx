@@ -165,7 +165,7 @@ function About() {
 
           <div className={style.card}>
             <div className={style.imgWrapper}>
-              <img src="/about/Team2.jpg" alt="Jennifer Lawrence - Fashion Designer" />
+              <img src="/about/team2.jpg" alt="Jennifer Lawrence - Fashion Designer" />
             </div>
             <h3>Jennifer Lawrence</h3>
             <p>Fashion Designer</p>
